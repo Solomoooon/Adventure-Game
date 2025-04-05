@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "removing class files and jar packages"
+rm src/therealBJ/*.class
+rm src/therealBJ/Cards/*.class
+rm src/therealBJ/Players/*.class
+rm bin/therealBJ/*.class
+rm bin/therealBJ/Cards/*.class
+rm bin/therealBJ/Players/*.class
+rm bin/*.jar
+echo "finished"

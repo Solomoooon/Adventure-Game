@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "compiling java files"
+cd src/
+javac therealBJ/Blackjack.java
+echo "producing jar package"
+jar -cfvm ../bin/Blackjack.jar ../tools/Blackjack.mf therealBJ/*.class therealBJ/card_images/*.png therealBJ/Cards/*.class therealBJ/Players/*.class
+cd ../
+echo "finished"
